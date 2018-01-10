@@ -32,14 +32,38 @@ class PublicClient
         return $this->httpClient;
     }
 
-    public function getTicker($ticker)
+    public function getSymbols()
     {
-        return json_decode($this->getHttpClient()->get('/api/1/public/'.$ticker.'/ticker')->getBody(), true);
+        return json_decode($this->getHttpClient()->get('/api/2/public/symbol')->getBody(), true);
     }
 
+    public function getSymbol($symbol)
+    {
+        return json_decode($this->getHttpClient()->get('/api/2/public/symbol/'.$symbol)->getBody(), true);
+    }
+
+    public function getTicker($symbol)
+    {
+        return json_decode($this->getHttpClient()->get('/api/2/public/ticker/'.$symbol)->getBody(), true);
+    }
 
     public function getTickers()
     {
-        return json_decode($this->getHttpClient()->get('/api/1/public/ticker')->getBody(), true);
+        return json_decode($this->getHttpClient()->get('/api/2/public/ticker')->getBody(), true);
+    }
+   
+    public function getTrades($symbol)
+    {
+        return json_decode($this->getHttpClient()->get('/api/2/public/trades/'.$symbol)->getBody(), true);
+    }
+
+    public function getOderBook($symbol)
+    {
+        return json_decode($this->getHttpClient()->get('/api/2/public/orderbook/'.$symbol)->getBody(), true);
+    }
+
+    public function getCandles($symbol)
+    {
+        return json_decode($this->getHttpClient()->get('/api/2/public/candles/'.$symbol)->getBody(), true);
     }
 }
