@@ -7,12 +7,18 @@
     "authors": [
         {
             "name": "HitBTC"
+        },
+        {
+            "name": "Pepijn Olivier",
+            "email": "olivier.pepijn@gmail.com"
         }
     ],
     "require": {
         "guzzlehttp/guzzle": "6.x"
     },
     "autoload": {
-        "psr-0": {"Hitbtc": "src/"}
+        "psr-4": {
+            "Pepijnolivier\\HitBtc\\": "src/"
+        }
     }
 }
