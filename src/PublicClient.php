@@ -55,7 +55,7 @@ class PublicClient
         return json_decode($this->getHttpClient()->get('/api/2/public/trades/'.$symbol)->getBody(), true);
     }
 
-    public function getOderBook($symbol)
+    public function getOrderBook($symbol)
     {
         return json_decode($this->getHttpClient()->get('/api/2/public/orderbook/'.$symbol)->getBody(), true);
     }
