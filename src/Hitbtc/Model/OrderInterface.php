@@ -1,5 +1,4 @@
-<?php
-namespace Hitbtc\Model;
+<?php namespace Pepijnolivier\HitBtc\Model;
 
 interface OrderInterface
 {

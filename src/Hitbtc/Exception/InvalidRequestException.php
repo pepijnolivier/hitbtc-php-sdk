@@ -1,5 +1,4 @@
-<?php
-namespace Hitbtc\Exception;
+<?php namespace Pepijnolivier\HitBtc\Exception;
 
 class InvalidRequestException extends HitbtcException
 {

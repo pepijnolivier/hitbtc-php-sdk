@@ -1,6 +1,4 @@
-<?php
-
-namespace Hitbtc;
+<?php namespace Pepijnolivier\HitBtc;
 
 
 use Psr\Http\Message\RequestInterface;
