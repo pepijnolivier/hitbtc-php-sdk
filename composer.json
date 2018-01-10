@@ -1,24 +1,24 @@
 {
-    "name": "pepijnolivier/hitbtc-php-sdk",
-    "description": "HitBTC SDK for PHP",
-    "type" : "library",
-    "minimum-stability": "dev",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "HitBTC"
-        },
-        {
-            "name": "Pepijn Olivier",
-            "email": "olivier.pepijn@gmail.com"
-        }
-    ],
-    "require": {
-        "guzzlehttp/guzzle": "6.x"
+  "name": "pepijnolivier/hitbtc-php-sdk",
+  "description": "HitBTC SDK for PHP",
+  "minimum-stability": "dev",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "HitBTC"
     },
-    "autoload": {
-        "psr-4": {
-            "Pepijnolivier\\HitBtc\\": "src/"
-        }
+    {
+      "name": "Pepijn Olivier",
+      "email": "olivier.pepijn@gmail.com"
     }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "6.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pepijnolivier\\HitBtc\\": "src/"
+    }
+  }
 }
